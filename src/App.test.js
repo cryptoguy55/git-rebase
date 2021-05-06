@@ -7,8 +7,12 @@ test('renders My really cool blog site logo', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+
 test('renders Biology Today article', () => {
   render(<App />);
   const linkElement = screen.getByText(/Biology Today:/i);
+test('renders Auto Review Article', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Auto Review:/i);
   expect(linkElement).toBeInTheDocument();
 });
